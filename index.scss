@@ -73,7 +73,7 @@ nav .test{
 
 
 .item3 {
-    background-image: url(/IMG/item3.jpeg);
+    background-image: url(/IMG/babyshower.jpg);
     background-size: 100% 1000px;
     background-attachment: fixed;
     width: 100%;
@@ -217,11 +217,12 @@ footer {
     align-content: center;
 }
 
-i.fab {
+i.fab.fa-instagram {
     margin-left: 3rem;
 }
 
 // ANimation
+
 
 .box1{
     opacity: 0;
@@ -232,3 +233,16 @@ i.fab {
     opacity: 1;
 }
 
+// Carousels
+
+// ul {
+//     display: flex;
+//     margin: 0;
+//     padding: 0;
+//     overflow: hidden;
+// }
+
+// li { 
+//     display: block;
+//     list-style: none;
+// }

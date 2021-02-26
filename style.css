@@ -58,7 +58,7 @@ nav .test {
 }
 
 .item3 {
-  background-image: url(/IMG/item3.jpeg);
+  background-image: url(/IMG/babyshower.jpg);
   background-size: 100% 1000px;
   background-attachment: fixed;
   width: 100%;
@@ -198,7 +198,7 @@ footer {
   align-content: center;
 }
 
-i.fab {
+i.fab.fa-instagram {
   margin-left: 3rem;
 }
 
