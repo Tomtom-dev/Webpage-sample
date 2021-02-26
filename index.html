@@ -100,13 +100,38 @@
                 <form action="contact-form">
                     <h2>contact</h2>
                     <label for="">full Name</label>
-                    <input type="text" placeholder="Enter your first and last name">
+                    <input 
+                    type="text" 
+                    id="name"
+                    name="name"
+                    placeholder="Enter your first and last name"
+                    class="form-control"
+                    required
+                    >
                     <label for="">Email</label>
-                    <input type="email" placeholder="Enter your Email">
+                    <input 
+                    type="email" 
+                    id="email"
+                    name="email"
+                    placeholder="Enter your Email"
+                    class="form-control"
+                    required>
                     <label for="">Message</label>
-                    <textarea name="" id="" cols="30" rows="7" placeholder="Write your message"></textarea>
+                    <textarea 
+                    name="message" 
+                    id="message" 
+                    cols="30" 
+                    rows="7" 
+                    placeholder="Write your message"
+                    class="form-control"
+                    required
+                    ></textarea>
                     <label for=""></label>
-                    <button class="submit-button">Submit</button>
+                    <button 
+                    type="submit"
+                    value="submit"
+                    class="submit-button"
+                    >Submit</button>
                 </form>
             </div>    
         </div>
