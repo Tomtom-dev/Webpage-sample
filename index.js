@@ -85,3 +85,26 @@ var scene2 = new ScrollMagic.Scene({
     //     <img style='width:250px' src="${data.picture}"></img>
     //     ${data.ingredients}`
     // }
+
+
+    // NodeMailer
+
+    const form = document.querySelector("#contact-form");
+
+    const sendMail =() =>{
+        fetch("https://nodemailer-vic-lo.herokuapp.com/send", {
+            method: "post", //2.
+            body: mail, //3.
+        
+          }).then((response) => {
+            return response.json();
+          });
+    }
+
+    const formEvent = form.addEventListener('submit', (event) =>{
+        event.preventDefault();
+        console.log("AMAIL");
+        let mail= new FormData(form)
+
+        sendMail(mail)
+    })
