@@ -25,9 +25,13 @@ app.use(bodyParser.json())
 // static folder
 app.use('/public', express.static(path.join(__dirname, 'public')))
 
-app.get('/' , (req,res) =>{
-    res.sendFile(__dirname + '/public/index.html')
-})
+// app.get('/' , (req,res) =>{
+//     res.sendFile(__dirname + '/public/index.html')
+// })
+
+app.route("/").get(function (req, res) {
+    res.sendFile(process.cwd() + "/public/index.html");
+  });
 
 app.post('/send' , (req,res) => {
     var output = `
