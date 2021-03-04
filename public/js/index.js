@@ -76,12 +76,3 @@ var scene2 = new ScrollMagic.Scene({
         colorStart:'#fff'
     })
     .addTo(controller)
-    
-    // for (data of dummyData){
-    //     console.log(data);
-    //     const liste= document.querySelector('div .cakes')
-    //     liste.innerHTML= `
-    //     ${data.cakeName} 
-    //     <img style='width:250px' src="${data.picture}"></img>
-    //     ${data.ingredients}`
-    // }
