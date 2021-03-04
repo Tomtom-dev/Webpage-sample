@@ -79,62 +79,11 @@ var scene2 = new ScrollMagic.Scene({
 
     // NodeMailer
 
+    console.log("where is my mind");
+
     const form = document.querySelector("#contact-form");
    
     let thename =document.querySelector("#name")
     let email =document.querySelector("#email")
     let message =document.querySelector("#message")
-
-    const sendMail = (mail) => {
-        fetch("https://localhost:5000", {
-          method: "post",
-          body: mail,
-        }).then((response) => {
-          return response.json();
-        });
-      };
-
-//    form.addEventListener('submit',(event) =>{
-//         event.preventDefault();
-
-//         let formData= {
-//             name: thename.value,
-//             email: email.value,
-//             message: message.value
-//         }
-//         let xhr = new XMLHttpRequest();
-//         xhr.open('POST', '/');
-//         xhr.setRequestHeader('content-type', 'application/json');
-//         xhr.onload = function(){
-//             console.log(xhr.responseText);
-//             if (xhr.responseText === "success"){
-//                 alert('email sent');
-//                 thename.value=""
-//                 email.value=""
-//                 message.value=""
-//             }else{
-//                 alert("something went wrong")
-//             }
-//         }
-//         xhr.send(JSON.stringify(formData))
-//     })
-
-const formEvent = form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    let mail = new FormData(form);
-    console.log(mail);
-    sendMail(mail);
-  });
     
-    // const sendMail =(mail) =>{
-    //     fetch("https://lies-server-page.herokuapp.com/send", {
-    //         method: "post", //2.
-    //         body: mail, //3.
-        
-    //       }).then((response) => {
-    //         return response.json();
-    //       });
-    // }
-
-
-    // console.log(process.env.EMAIL);
