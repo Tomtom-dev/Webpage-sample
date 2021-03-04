@@ -76,12 +76,3 @@ var scene2 = new ScrollMagic.Scene({
         colorStart:'#fff'
     })
     .addTo(controller)
-
-    // NodeMailer
-
-    const form = document.querySelector("#contact-form");
-   
-    let thename =document.querySelector("#name")
-    let email =document.querySelector("#email")
-    let message =document.querySelector("#message")
-    
