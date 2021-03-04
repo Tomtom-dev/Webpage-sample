@@ -108,50 +108,6 @@ nav .test {
   border-radius: 3px;
 }
 
-div .cakes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  height: 33em;
-  width: 44em;
-  margin: 2rem auto;
-  z-index: 1;
-  background-color: #ecdede;
-}
-
-div .card-cake, img {
-  position: relative;
-  opacity: 1;
-  margin-left: 2px;
-  margin-bottom: 1rem;
-  border-radius: 4px;
-  transition: 0.3s;
-  width: 10em;
-  height: 15em;
-  align-items: flex-end;
-  justify-content: center;
-  display: flex;
-}
-
-div .text-block {
-  width: 100%;
-  opacity: 0;
-  position: absolute;
-  padding-left: 3px;
-  font-family: "Libre Baskerville", serif;
-}
-
-div .text-block:hover {
-  opacity: 1;
-  transition: 1s ease;
-}
-
-div .card-cake:hover {
-  opacity: 0.6;
-  color: black;
-  transition: 1s ease;
-}
-
 form {
   width: 40rem;
   margin: 0 auto;
@@ -168,7 +124,7 @@ label {
   text-align: right;
 }
 
-label + input, label + select, label + textarea, button {
+label + input, label + select, label + textarea, .submit-button {
   width: 30%;
   margin: 0 30% 0 4%;
 }
