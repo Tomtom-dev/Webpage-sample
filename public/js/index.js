@@ -79,8 +79,6 @@ var scene2 = new ScrollMagic.Scene({
 
     // NodeMailer
 
-    console.log("where is my mind");
-
     const form = document.querySelector("#contact-form");
    
     let thename =document.querySelector("#name")
