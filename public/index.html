@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!-- Scrollmagic -->
     <link rel="stylesheet" href="/public/css/index.css">
+    <link rel="stylesheet" href="/public/css/caroussel.css">
     <title>Delies2</title>
 </head>
 <body> 
@@ -20,71 +21,23 @@
                 <li> <a href="#contact">Contact</a> </li>
             </ul>  
         </nav>
-        
-        <!-- <img class="items item1" src="/IMG/homepage.jpg" alt="homepage"> -->
+    
         <div class="item1"></div>
         
-        <div id="onzeProducten" class="items item2">
-            <div class="cakes box3">
-                <!-- container -->
-                <h2 class="highlight-cakes">Onze Producten</h2>
-                <div class="card-cake"> 
-                    <img  src="/public/IMG/cake1.jpg" alt="Avatar" style="width:100%">
-                    <div class="text-block">
-                        <h4><b>Cake1</b></h4> 
-                        <p>Very good cake</p> 
-                    </div>
-                </div> 
-                <div class="card-cake"> 
-                    <img src="/public/IMG/cake2.jpg" alt="Avatar" style="width:100%">
-                    <div class="text-block">
-                        <h4><b>Cake1</b></h4> 
-                        <p>Very good cake</p> 
-                    </div>
-                </div> 
-                <div class="card-cake"> 
-                    <img src="/public/IMG/cake3.jpg" alt="Avatar" style="width:100%">
-                    <div class="text-block">
-                        <h4><b>Cake1</b></h4> 
-                        <p>Very good cake</p> 
-                    </div>
-                </div> 
-                <div class="card-cake"> 
-                    <img src="/public/IMG/cake4.jpg" alt="Avatar" style="width:100%">
-                    <div class="text-block">
-                        <h4><b>Cake1</b></h4> 
-                        <p>Very good cake</p> 
-                    </div>
-                </div> 
-                <div class="card-cake"> 
-                    <img src="/public/IMG/cake5.jpeg" alt="Avatar" style="width:100%">
-                    <div class="text-block">
-                        <h4><b>Cake1</b></h4> 
-                        <p>Very good cake</p> 
-                    </div>
-                </div> 
-                <div class="card-cake"> 
-                    <img src="/public/IMG/cake6.jpeg" alt="Avatar" style="width:100%">
-                    <div class="text-block">
-                        <h4><b>Cake1</b></h4> 
-                        <p>Very good cake</p> 
-                    </div>
-                </div> 
-                <div class="card-cake"> 
-                    <img src="/public/IMG/cake7.jpeg" alt="Avatar" style="width:100%">
-                    <div class="text-block">
-                        <h4><b>Cake1</b></h4> 
-                        <p>Very good cake</p> 
-                    </div>
-                </div> 
-                <div class="card-cake"> 
-                    <img src="/public/IMG/cake8.jpg" alt="Avatar" style="width:100%">
-                    <div class="text-block">
-                        <h4><b>Cake1</b></h4> 
-                        <p>Very good cake</p> 
-                    </div>
-                </div> 
-            </div>
+        <div id="onzeProducten" class="items item2">  
+                <!-- caroussel -->
+                <div class="caroussel">
+                    <button class="caroussel__button previous" id="previous"><</button>
+                        <div class="caroussel__images">
+                            <img src="/public/IMG/cake1.jpg" alt="avatar">
+                            <img src="/public/IMG/cake2.jpg" alt="avatar">
+                            <img src="/public/IMG/cake3.jpg" alt="avatar">
+                            <img src="/public/IMG/cake4.jpg" alt="avatar">
+                            <img src="/public/IMG/cake5.jpeg" alt="avatar">
+                            <img src="/public/IMG/cake6.jpeg" alt="avatar">
+                        </div>
+                    <button class="caroussel__button next" id="next">></button>    
+                </div>
         </div>
         <div class="items item3"></div>
         <div id="over-ons" class="items item4">
@@ -149,5 +102,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
     <script type="text/javascript" src="/public/js/index.js"></script>
+    <script type="text/javascript" src="/public/js/carrousel.js"></script>
 </body>
 </html>
