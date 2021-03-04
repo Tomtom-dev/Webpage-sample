@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     width: 55rem;
-    height: 45rem;
+    height: 37rem;
     position: relative;
     overflow: hidden;
     margin: auto auto;
@@ -11,12 +11,12 @@
   .caroussel__images {
     display: flex;
     transform: translateX(0);
-    transition: transform 0.35s;
+    transition: transform 0.35s ease;
   }
 
   .caroussel__images img{
       width: 55rem;
-      height: 45rem;
+      height: 37rem;
   }
 
   .caroussel__button {
