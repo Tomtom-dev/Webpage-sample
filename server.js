@@ -7,7 +7,7 @@ require("dotenv").config();
 const { json } = require("body-parser");
 const { dirname } = require("path");
 
-const port = process.env.port || 5000;
+const PORT = process.env.PORT || 5000;
 
 // initiat express app
 
@@ -80,7 +80,7 @@ app.post('/send' , (req,res) => {
     });
     
 })
-    app.listen(port, () => {
-        console.log(`Listening on port ${port}`);
+    app.listen(PORT, () => {
+        console.log(`Listening on port ${PORT}`);
     })
     
