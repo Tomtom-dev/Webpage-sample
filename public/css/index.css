@@ -187,6 +187,10 @@ i.fab.fa-instagram {
   h2 {
     width: 25rem;
   }
+
+  label + input, label + select, label + textarea, .submit-button {
+    width: 33%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
