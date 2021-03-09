@@ -1,8 +1,8 @@
 .caroussel {
     display: flex;
     align-items: center;
-    width: 55rem;
-    height: 37rem;
+    width: 50%;
+    height: 82%;
     position: relative;
     overflow: hidden;
     margin: auto auto;
@@ -10,13 +10,17 @@
 
   .caroussel__images {
     display: flex;
+    max-width: 100%;
+    max-height: 100%;
     transform: translateX(0);
     transition: transform 0.35s ease;
   }
 
-  .caroussel__images img{
-      width: 55rem;
-      height: 37rem;
+  img{
+    object-fit: contain;
+    max-width: 100%;
+    max-height: auto;
+    
   }
 
   .caroussel__button {
