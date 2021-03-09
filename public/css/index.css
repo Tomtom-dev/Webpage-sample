@@ -8,6 +8,8 @@ nav {
   display: grid;
   grid-template-columns: 1fr 2fr;
   background-color: white;
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
 }
 
 .logo {
@@ -52,6 +54,13 @@ nav .test {
   height: 900px;
 }
 
+.onze-producten {
+  font-family: "Libre Baskerville", serif;
+  text-align: center;
+  width: 0rem;
+  height: 2rem;
+}
+
 .highlight-cakes {
   font-family: "Libre Baskerville", serif;
   font-size: 60px;
@@ -62,7 +71,7 @@ nav .test {
   background-size: 100% 1000px;
   background-attachment: fixed;
   width: 100%;
-  height: 1200px;
+  height: 1000px;
   display: block;
 }
 
@@ -167,6 +176,11 @@ i.fab.fa-instagram {
   opacity: 1;
 }
 
+@media screen and (max-width: 894px) {
+  .item1 {
+    height: 12rem;
+  }
+}
 @media screen and (max-width: 531px) {
   .content {
     width: 22em;
